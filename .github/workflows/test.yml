@@ -22,7 +22,7 @@ jobs:
             echo "Configuring redefine"
             # insert redefine configure code here
             
-            redefine config set stable_branches=main
+            redefine config set stable_branch=main
             redefine start --pytest --discover
         
       - run: pytest .
