@@ -23,6 +23,7 @@ jobs:
             # insert redefine configure code here
             
             redefine config set stable_branch=main
+            redefine config set slack_bot_enabled=true
             redefine start --pytest --discover
         
       - run: pytest .
